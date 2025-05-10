@@ -1,0 +1,513 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+}
+.container {
+  width: 70%;
+  margin: auto;
+}
+.clear-fix {
+  clear: both;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.Main-title h2 {
+  text-align: center;
+  position: relative;
+  color: #333;
+  font-size: 40px;
+  font-weight: 800;
+  font-family: "Source Sans 3", sans-serif;
+  margin-bottom: 10px;
+}
+.btn {
+  border: none;
+  padding: 12px 20px;
+  margin-top: 10px;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #ff305b;
+  font-size: 15px;
+  font-weight: 400;
+  transition: all 0.3s;
+}
+.icons i {
+  margin: 10px;
+  font-size: 17px;
+  transition: color 0.2s;
+}
+/* ========== Action ======== */
+body::selection {
+  color: #f1f1f1;
+  background-color: #ff305b;
+}
+.btn:hover {
+  background-color: #ec2403;
+  cursor: pointer;
+}
+.Main-title h2::before {
+  content: "";
+  width: 70px;
+  height: 11px;
+  border-top: 1px solid #ff305b;
+  border-bottom: 1px solid #ff305b;
+  position: absolute;
+  bottom: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.Main-title h2::after {
+  content: "";
+  width: 170px;
+  height: 0.5px;
+  background-color: #ff305b;
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.sec-padding {
+  padding: 60px 0;
+}
+.active {
+  color: #ff305b;
+}
+.aspect-ratio {
+  aspect-ratio: 16/9;
+}
+.icons i:hover {
+  color: #ff305b;
+  cursor: pointer;
+}
+/* =================== Global Style =================== */
+/* fonts */
+/* font-family: "Source Sans 3", sans-serif;
+font-family: "Roboto", sans-serif; */
+
+/* =================== Global Style =================== */
+
+/* =================== Start header ===================  */
+#header {
+  background-image: linear-gradient(rgba(1, 1, 1, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../images/hero\ img.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+#header .header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: "Source Sans 3", sans-serif;
+}
+#header .header-content h4 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+}
+#header .header-content h1 {
+  font-size: 37px;
+  font-weight: 700;
+  color: #ff305b;
+}
+#header .header-content p {
+  font-size: 13;
+  font-weight: 300;
+  color: #fff;
+}
+/* =================== end header ===================  */
+
+/* =================== Start navbar ===================  */
+#navbar {
+  background-color: rgba(0, 0, 0, 0.8);
+  font-family: "Roboto", sans-serif;
+  padding: 5px 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  text-align: center;
+  z-index: 999;
+}
+#navbar .nav-links {
+  padding-top: 5px;
+}
+#navbar .nav-links ul {
+  padding-top: 10px;
+}
+#navbar .nav-links ul li {
+  padding: 10px 0;
+}
+#navbar .nav-logo h2 {
+  font-size: 24px;
+  font-weight: 800;
+  color: #ff305b;
+  padding-top: 10px;
+}
+#navbar .nav-links a {
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+}
+
+/* =================== end navbar ===================  */
+
+/* =================== start about ===================  */
+
+#about .container {
+  width: 95%;
+}
+#about .about-img img {
+  width: 100%;
+  display: block;
+  border-radius: 5px;
+}
+#about .img-border {
+  border: 1px solid #555555;
+  border-radius: 5px;
+}
+#about .about-img .img-border .img-details {
+  position: relative;
+  overflow: hidden;
+}
+#about .about-img .img-border .img-details .layer {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.6s;
+}
+#about .about-text {
+  float: right;
+  width: 98%;
+}
+.about-text h2 {
+  color: rgb(51, 51, 51);
+  font-size: 34px;
+  font-weight: 600;
+  padding: 15px 0;
+  font-family: "Source Sans 3", sans-serif;
+}
+.about-text p {
+  font-weight: 400;
+  line-height: 25px;
+  font-family: "Roboto", sans-serif;
+  color: rgb(85, 85, 85);
+  border-bottom: 1px dashed #555555;
+  padding-bottom: 15px;
+}
+#about .about-text ul {
+  padding-top: 15px;
+  line-height: 14px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+}
+#about .about-text ul li {
+  padding: 15px 0;
+  color: #555555;
+  font-size: 16px;
+  font-weight: 400;
+}
+#about .about-text ul li span {
+  color: rgb(51, 51, 51);
+  font-weight: 600;
+}
+#about .icons {
+  width: fit-content;
+  color: #fff;
+  padding: 0 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* ========= Actions =========*/
+#about .about-img .img-border .img-details:hover .layer {
+  top: 0;
+  opacity: 1;
+}
+/* =================== end about ===================  */
+
+/* =================== Start services ===================  */
+#services {
+  min-height: 60vh;
+  font-family: "Roboto", sans-serif;
+  background-color: #f1f1f1;
+  margin: 60px 0;
+}
+#services .container {
+  text-align: center;
+  width: 63%;
+}
+#services .container .card {
+  margin-top: 30px;
+  float: left;
+  padding: 35px 15px;
+  transition: all 0.4s;
+}
+#services .container .card h3 {
+  color: rgb(51, 51, 51);
+  padding: 10px 0;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Source Sans 3", sans-serif;
+}
+#services .container .card p {
+  color: rgb(85, 85, 85);
+  line-height: 25px;
+}
+/* ========= Actions =========*/
+#services .container .card:hover {
+  background-color: #fff;
+  scale: 1.1;
+  border-radius: 5px;
+}
+/* =================== End services ===================  */
+
+/* =================== Start Portfolio ===================  */
+#Portfolio {
+  min-height: 100vh;
+}
+#Portfolio .container {
+  width: 90%;
+}
+#Portfolio .container .portfolio-content {
+  text-align: center;
+}
+
+#Portfolio .container .portfolio-content .bar {
+  padding: 20px 0;
+  margin: auto;
+}
+
+#Portfolio .container .portfolio-content ul a {
+  float: left;
+  margin: 10px;
+  font-family: "Roboto", sans-serif;
+  color: rgb(51, 51, 51);
+}
+#Portfolio .container .cards .item {
+  width: 100%;
+  position: relative;
+  padding: 15px;
+}
+#Portfolio .container .cards .item .inner {
+  position: relative;
+}
+#Portfolio .container .item img {
+  width: 100%;
+  display: block;
+}
+#Portfolio .container .cards .item .layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: all 0.3s;
+}
+/* ========= Actions =========*/
+#Portfolio .container .cards .item:hover .layer {
+  opacity: 1;
+  cursor: pointer;
+}
+
+/* =================== End portfolio ===================  */
+
+/* =================== start counter ===================  */
+#counter {
+  background-color: #f1f1f1;
+  padding: 120px 0;
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+}
+#counter .item {
+  margin-bottom: 30px;
+}
+#counter .item > * {
+  margin-bottom: 10px;
+}
+#counter .item i {
+  display: block;
+  font-size: 25px;
+  color: #ff305b;
+}
+#counter .item span {
+  color: #555;
+  font-weight: 600;
+}
+#counter .item h2 {
+  font-size: 20px;
+  font-weight: 800;
+  color: #333;
+}
+/* =================== End counter ===================  */
+
+/* =================== start feedback ===================  */
+#feedback .container {
+  width: 92%;
+}
+#feedback .feedback-box {
+  background: #ff305b;
+  background: linear-gradient(
+    134deg,
+    rgba(255, 48, 91, 1) 22%,
+    rgba(241, 241, 241, 1) 17%
+  );
+  width: 100%;
+  margin: 60px auto;
+  padding: 35px 0;
+  border-radius: 8px;
+}
+#feedback .feedback-box .feedback-content {
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+}
+#feedback .feedback-box .feedback-content h3 {
+  font-size: 25px;
+  font-weight: 500;
+  color: #333;
+  margin: 0;
+}
+#feedback .feedback-box .feedback-content h4 {
+  padding: 10px 0 0;
+}
+#feedback .feedback-box .feedback-content h4 a {
+  font-size: 15px;
+  font-weight: 600;
+  color: #777;
+  font-family: "Source Sans 3", sans-serif;
+}
+#feedback .feedback-box .feedback-content p {
+  line-height: 25px;
+  font-style: italic;
+  color: rgb(51, 51, 51);
+  font-family: "Source Sans 3", sans-serif;
+  padding: 10px 0;
+}
+#feedback .feedback-box .feedback-content .stars-icons i {
+  color: #f1c30d;
+}
+#feedback .feedback-box .feedback-img {
+  text-align: center;
+}
+#feedback .feedback-box .feedback-img img {
+  width: 120px;
+  border-radius: 100%;
+}
+/* =================== End feedback ===================  */
+
+/* =================== start blog ===================  */
+#blog {
+  background-color: #f1f1f1;
+}
+#blog .container {
+  width: 70%;
+}
+#blog .blog-items {
+  margin-top: 80px;
+}
+#blog .blog-items .item {
+  width: 100%;
+  padding-left: 30px;
+  margin-bottom: 30px;
+}
+#blog .blog-items .item .blog-img img,
+iframe {
+  width: 100%;
+  display: block;
+}
+#blog .blog-items .item .caption {
+  color: #333;
+  font-family: "Source Sans 3", sans-serif;
+  padding: 10px;
+  background-color: #fff;
+}
+#blog .blog-items .item .caption p {
+  padding-bottom: 10px;
+  line-height: 25px;
+}
+#blog .blog-items .item .caption a {
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.4s;
+}
+#blog .blog-items .item .caption h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 10px 0;
+  transition: color 0.4s;
+  text-transform: capitalize;
+}
+/* ========= Actions =========*/
+#blog .blog-items .item .caption h3:hover {
+  cursor: pointer;
+  color: #ff305b;
+}
+#blog .blog-items .item .caption a:hover {
+  color: #ff305b;
+}
+/* =================== End blog ===================  */
+
+/* ==================== start contact ===================  */
+
+#contact .container .contact-form {
+  width: 90%;
+  margin: auto;
+  padding: 60px 0;
+}
+#contact .container .contact-form input,
+textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 12px;
+  margin-bottom: 25px;
+  border-radius: 4px;
+}
+#contact .container .contact-form textarea {
+  min-height: 100px;
+  margin-bottom: 10px;
+}
+#contact .container .contact-form .btn {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+}
+/* ========= Actions =========*/
+#contact .container .contact-form input:focus,
+textarea:focus {
+  outline: 1px solid #ff305b;
+  border: none;
+}
+/* ==================== End contact ===================  */
+
+/* ==================== Start footer ===================  */
+#footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 60px 0;
+  font-family: "Roboto", sans-serif;
+}
+/* ==================== End footer ===================  */

@@ -1,0 +1,241 @@
+/* steps to make Responsive wb design
+1. Build website first on pc
+2. Small screen
+َ2. Comment all code you don't need for small screen
+3. Take comment and added in media query */
+
+/* RWD: Responsive Web Design */
+/* Media Query => is a condition */
+
+/* sm */
+@media screen and (min-width: 640px) {
+  #about .container {
+    width: 60%;
+  }
+}
+/* md  */
+@media screen and (min-width: 768px) {
+  #header .header-content h4 {
+    font-size: 24px;
+  }
+  #header .header-content h1 {
+    font-size: 70px;
+  }
+  #header .header-content p {
+    font-size: 26px;
+  }
+  /* ============ about ================= */
+  #about .container {
+    width: 95%;
+  }
+  #about .about-img {
+    width: 35%;
+    float: left;
+    margin-top: 25px;
+  }
+  #about .about-text {
+    width: 60%;
+  }
+  #about .about-text ul li {
+    width: 50%;
+    float: left;
+  }
+  /* ============ services ================= */
+  #services .container {
+    width: 90%;
+  }
+  #services .container .card {
+    width: 50%;
+    padding: 30px 20px;
+  }
+  /* ============ portfolio ================= */
+  #Portfolio .container {
+    width: 98%;
+  }
+  #Portfolio .container .portfolio-content .bar {
+    width: 65%;
+  }
+  #Portfolio .container .portfolio-content ul a {
+    margin: 25px;
+  }
+  #Portfolio .container .cards .item {
+    width: 50%;
+    float: left;
+  }
+  /* ============ counter ================= */
+  #counter .container {
+    width: 90%;
+  }
+  #counter .item {
+    width: 25%;
+    float: left;
+  }
+  /* ============ feedback ===============  */
+  #feedback .container {
+    width: 98%;
+  }
+  #feedback .feedback-box {
+    background: linear-gradient(
+      134deg,
+      rgba(255, 48, 91, 1) 18%,
+      rgba(241, 241, 241, 1) 17%
+    );
+    padding: 50px 40px;
+  }
+  #feedback .feedback-box .feedback-content {
+    width: 80%;
+    float: left;
+    padding: 0 10px;
+  }
+  #feedback .feedback-box .feedback-img {
+    width: 20%;
+    float: left;
+  }
+  /* ============ blog ================= */
+  #blog .container {
+    width: 90%;
+  }
+  #blog .blog-items .item {
+    width: 33.333%;
+    float: left;
+  }
+  /* ============ contact ================= */
+  #contact .container {
+    width: 100%;
+  }
+  #contact .container .contact-form .upper-inputs > * {
+    width: 48%;
+  }
+  #contact .container .contact-form .uname {
+    float: left;
+  }
+  #contact .container .contact-form .uemail {
+    float: right;
+  }
+}
+/* lg */
+@media screen and (min-width: 1024px) {
+  #navbar .nav-logo {
+    float: left;
+  }
+  #navbar .nav-links {
+    float: right;
+  }
+  #navbar .nav-links ul li {
+    float: left;
+    padding: 0 10px;
+  }
+  /* ============ about ================= */
+  #about .container {
+    width: 80%;
+  }
+  #about .about-img {
+    width: 35%;
+    float: left;
+  }
+  #about .img-border {
+    border: 6px solid #555555;
+  }
+  #about .about-img .img-border .img-details {
+    top: 20px;
+    left: 20px;
+  }
+  #about .about-text {
+    width: 57%;
+  }
+  #about .about-text ul li {
+    width: 50%;
+    float: left;
+  }
+  /* ============ services ================= */
+  #services .container {
+    width: 90%;
+  }
+  #services .container .card {
+    width: 25%;
+    padding: 30px 20px;
+  }
+  /* ============ portfolio ================= */
+  #Portfolio .container {
+    width: 95%;
+  }
+  #Portfolio .container .portfolio-content .bar {
+    width: 40%;
+  }
+
+  #Portfolio .container .portfolio-content ul a {
+    margin: 30px;
+  }
+  #Portfolio .container .cards .item {
+    width: 33.333%;
+    float: left;
+  }
+  /* ============ feedback ===============  */
+  #feedback .feedback-box {
+    background: linear-gradient(
+      134deg,
+      rgba(255, 48, 91, 1) 18%,
+      rgba(241, 241, 241, 1) 17%
+    );
+    padding: 50px 40px;
+    width: 60%;
+  }
+  #feedback .feedback-box .feedback-content {
+    width: 80%;
+    float: left;
+    padding: 0 40px;
+  }
+  #feedback .feedback-box .feedback-img {
+    width: 20%;
+    float: left;
+  }
+  /* ============ contact ================= */
+
+  #contact .container .contact-form {
+    width: 60%;
+  }
+}
+/* xl */
+@media screen and (min-width: 1280px) {
+  /* ============ about ================= */
+  #about .about-img {
+    width: 35%;
+    float: left;
+  }
+  #about .img-border {
+    border: 6px solid #555555;
+  }
+  #about .about-img .img-border .img-details {
+    top: 20px;
+    left: 20px;
+  }
+  #about .about-text {
+    width: 57%;
+  }
+  #about .about-text ul li {
+    width: 50%;
+    float: left;
+  }
+}
+/* 2xl */
+@media screen and (min-width: 1536px) {
+  /* ============ about ================= */
+  #about .about-img {
+    width: 35%;
+    float: left;
+  }
+  #about .img-border {
+    border: 6px solid #555555;
+  }
+  #about .about-img .img-border .img-details {
+    top: 20px;
+    left: 20px;
+  }
+  #about .about-text {
+    width: 57%;
+  }
+  #about .about-text ul li {
+    width: 50%;
+    float: left;
+  }
+}
